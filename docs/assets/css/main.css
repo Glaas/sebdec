@@ -1,10 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
-/*
-	Industrious by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+
 /* Basic */
 @-ms-viewport {
   width: device-width; }
@@ -659,8 +655,8 @@ table.alt tbody tr td {
 
 /* Highlights */
 .highlights {
-  width: 100%;
-  margin: 2.5rem 0;
+  width: 50%;
+  margin: 0.5rem 0;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -709,7 +705,7 @@ table.alt tbody tr td {
     margin-bottom: 0; }
   @media screen and (max-width: 980px) {
     .highlights > * {
-      width: 50%; }
+      width: 100%; }
     .highlights > * {
       padding: 1rem;
       width: calc(33.3333333333% + 0.6666666667rem); }
@@ -2843,4 +2839,13 @@ body.is-menu-visible #menu {
   margin-left: auto;
   margin-right: auto;
 
+}
+.myboxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px 2em;
+}
+
+.myboxes :first-child {
+    align-self: center;
 }
