@@ -1,14 +1,27 @@
-const headerTemplate = document.querySelector('headerTemplate');
-const node = document.importNode(headerTemplate.content, true)
-document.body.appendChild(node);
+const tempolate = `
+<header id="header">
+<a class="logo" href="index.html">Home</a>
+<a class="logo" href="wip.html">Portfolio</a>
+<a class="logo" href="wip.html">Games</a>
+<a class="logo" href="wip.html">Art</a>
+<a class="logo" href="neatstuff.html">Neat stuff I made</a>
+<a class="logo" href="aboutme.html">About me / Contact</a>
+<a class="logo" href="testLab.html">teslab</a>
 
-function showHeader(){
-    const headerTemplate = document.querySelector('headerTemplate');
-    var temp = document.getElementById("headertemp");
-    var clon = temp.content.cloneNode(true);
-    document.body.appendChild(temp);
-    document.body.appendChild(clon);   
-     document.body.appendChild(tempcontent);
+
+</header>
+`
+
+function showHeader() {
+
+    var ht = document.createElement('div');
+    ht.innerHTML = tempolate;
+
+    document.body.prepend(ht);
+
+
+
+
 
 
 
