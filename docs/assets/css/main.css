@@ -2423,7 +2423,10 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10001; }
+  z-index: 10001; 
+padding-left: 25%;
+padding-right: 25%;
+}
   #header > .logo {
     color: #ffffff;
     font-size: 1rem;
