@@ -1,2 +1,0 @@
-# sebdec
-Personal website
