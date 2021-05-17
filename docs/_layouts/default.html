@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>{{title}}</title>
+	<title>{{page.title}}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="" />
@@ -12,28 +12,23 @@
 
 <body class="is-preload">
 
-    <header id="header">
-        <a class="logo" href="index.html">Home</a>
-        <a class="logo" href="index.html">Portfolio</a>
-        <a class="logo" href="index.html">Games</a>
-        <a class="logo" href="index.html">Art</a>
-        <a class="logo" href="index.html">Neat stuff I made</a>
-        <a class="logo" href="aboutme.html">About me / Contact</a>
-    </header>
+	<header id="header">
+		<a class="logo" href="index.html">Home</a>
+		<a class="logo" href="index.html">Portfolio</a>
+		<a class="logo" href="index.html">Games</a>
+		<a class="logo" href="index.html">Art</a>
+		<a class="logo" href="index.html">Neat stuff I made</a>
+		<a class="logo" href="aboutme.html">About me / Contact</a>
+	</header>
 
 	<!-- Banner -->
 	<section id="banner">
 		<div class="inner">
-			<h1>Sebastien Decuyper</h1>
-			<p>Programmer / Generalist game developer</p>
-
-            <h3>change the lines above to the title of the section </h3>
-
-
+			<h1>{{page.bannertitle}}</h1>
+			<p>{{page.bannersubtitle}}</p>
 		</div>
-
 	</section>
-    
+
 
 	<!-- Highlights -->
 	<section class="wrapper">
@@ -41,14 +36,12 @@
 			<header class="special">
 
 
-                <h1>Put your content here mate </h1>
-                <h1>{{name}} </h1>
 				{{content}}
 
 
 			</header>
 		</div>
-		
+
 	</section>
 	<!-- Footer -->
 	<footer id="footer">
@@ -65,16 +58,14 @@
 						<li><a href="https://github.com/Glaas"><i class="icon fa-github">&nbsp;</i>Glaas</a></li>
 						<li><a href="https://www.artstation.com/glaas"><i
 									class="icon fa-paint-brush">&nbsp;</i>ArtStation</a></li>
-
 					</ul>
 				</section>
 			</div>
 			<div class="copyright">
-				&copy; Sebastien Decuyper<br> Made with sweat and blood
+				&copy; Sebastien Decuyper<br> Made from scratch with sweat and blood
 			</div>
 		</div>
 	</footer>
-
 	<!-- Scripts -->
 	<script src="/assets/js/jquery.min.js"></script>
 	<script src="/assets/js/browser.min.js"></script>
@@ -82,8 +73,6 @@
 	<script src="/assets/js/util.js"></script>
 	<script src="/assets/js/main.js"></script>
 	<script src="/assets/js/headerTemplateParser.js"></script>
-
-
 </body>
 
 </html>
