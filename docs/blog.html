@@ -7,8 +7,7 @@ title: Blog
 
 <ul>
     {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
+        {% include postthumb.html %}
     {% endfor %}
   </ul>
+
