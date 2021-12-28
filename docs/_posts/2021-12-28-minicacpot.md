@@ -148,7 +148,7 @@ _Yucky, there's one line that's completely obscure to you_
 
 ## Final note
 
-This is not a game you can win every time. This article barely gives you a way to make your attempts more reliable. You
+This is not a game you can win every time. This article merely gives you a way to make your attempts more reliable. You
 may not win the first time. However, applying that technique, I usually get a jackpot at least once every 5 days, and
 more often once every 2 or 3 days. It's become fairly frequent to get two jackpots in a row. Before applying that, I was
 not able to get a jackpot even after weeks of daily attempts.
