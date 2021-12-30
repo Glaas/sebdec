@@ -4,21 +4,21 @@
     </div>
     <div class="column" style="width: 66.66%;">
 
-        <h2 style="color: rgb(187, 0, 0); text-decoration-line: underline;"><a href="{{ post.url }}">{{
+        <h3 style="color: rgb(187, 0, 0); text-decoration-line: underline;"><a href="{{ post.url }}">{{
                 post.title }}</a></h2>
-
-        <p>{{post.postdate}}</p>
-
-        <p>{{post.description}}</p>
-        <p><span style="font-weight:300;"><i>Read time : {{post.readtime}}</i>
-            </span></p>
-        <span style="font-size:smaller;font-weight:300;"><i>
-                Tags :
-                {% for atag in post.tags %}
-                {{post.tags[forloop.index]}}
-                {% endfor %}
-            </i>
-        </span>
+            <p>
+                {{post.postdate}}</br>
+                {{post.description}}</br>
+                <span style="font-weight:300;"><i>Read time : {{post.readtime}}</i>
+                </span></br>
+                <span style="font-size:smaller;font-weight:300;"><i>
+                        Tags :
+                        {% for atag in post.tags %}
+                        {{post.tags[forloop.index]}}
+                        {% endfor %}
+                    </i>
+                </span>
+            </p>
     </div>
 </div>
 <hr>

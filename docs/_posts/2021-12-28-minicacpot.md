@@ -7,7 +7,7 @@ postsubtitle: "Get those MGPs"
 description: "Increase those chances at mini-cacpot !"
 
 tags:
-coverimage:
+coverimage: images\ffxivlogo.png
 readtime: "5 min"
 ---
 
