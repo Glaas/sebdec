@@ -155,6 +155,8 @@ not able to get a jackpot even after weeks of daily attempts.
 
 Happy playing ! [Let me know](/aboutme.html) if this helped you !
 
+{% include commentForm.html %}
+
 <style>
     .grid-container {
         display: grid;
