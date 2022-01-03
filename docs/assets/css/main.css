@@ -2424,16 +2424,16 @@ body {
   top: 0;
   width: 100%;
   z-index: 10001; 
-padding-left: 25%;
-padding-right: 25%;
+padding-left: 10%;
+padding-right: 10%;
 }
   #header > .logo {
     color: #ffffff;
-    font-size:  1rem;
+    font-size: calc(10px + 0.5vw);
+    max-height: 100%;
     font-weight: 600;
-    height: inherit;
     line-height: inherit;
-    padding: 25 1.25rem;
+    padding: 25 .25rem;
     text-decoration: none;
  }
   #header > nav > a {
