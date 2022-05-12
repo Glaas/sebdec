@@ -5,39 +5,56 @@ bannersubtitle: Not the best name, I know
 title: Sebastien Decuyper - Tower Offense
 ---
 
-<div class="col-lg-4 mt-4">
-  <iframe
-    frameborder="0"
-    src="https://itch.io/embed/1270431?linkback=true&amp;bg_color=252525&amp;fg_color=e3ecf1&amp;link_color=5bb8fa&amp;border_color=4b585e"
-    width="552"
-    height="167"
-    ><a href="https://mawoopy.itch.io/toweroffense"
-      >TowerOffense by marie, Glaas</a
-    ></iframe
-  >
+<div class="center">
+  <div class="col-lg-4 mt-4">
+    <iframe frameborder="0"
+      src="https://itch.io/embed/1270431?linkback=true&amp;bg_color=252525&amp;fg_color=e3ecf1&amp;link_color=5bb8fa&amp;border_color=4b585e"
+      width="552" height="167"><a href="https://mawoopy.itch.io/toweroffense">TowerOffense by Glaas</a>
+    </iframe>
+  </div>
 </div>
 <p>
   Tower Offense is a tower defense game with procedurally generated grid,
   pathfinding system, and online features. Made in Unity with C#.
 </p>
 <p>
-  <h4>Main features:</h4>
-  <li>- Procedurally generated grid</li>
-  <li>
-    - - Every instance of the game can be controlled remotely at runtime through
-    the use of a database
-  </li>
-  <li>- In-game feedback form storing data on a database</li>
-  <li>- In-game console</li>
+<h4>Main features:</h4>
+<li>- Procedurally generated grid</li>
+<li>
+  - Every instance of the game can be controlled remotely at runtime through
+  the use of a database
+</li>
+<li>- In-game feedback form storing data on a database</li>
+<li>- In-game console</li>
 </p>
+<div class="center-text">
+  <h3>GRID</h3>
+</div>
+<div class="center">
+  <video width="50%" controls>
+    <source src="..\images\towerOffenseVideo.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+<div class="center-text">
+  <p><i>Press the play button</i></p>
+</div>
+<p>The grid is generated at runtime and be dynamically resized.</p>
+<p>The helper class uses the simplest building blocks possible so any pattern is easily configurable.</p>
+{% highlight c# %}
 
-<h3>GRID</h3>
-<video width="50%" controls>
-  <source src="..\images\towerOffenseVideo.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-<p style="italic">Press the play button</p>
-<p style="">The grid is generated at runtime and be dynamically resized. I also made some helper classes to draw any kind of patterns within the grid.</p>
-<p>You can see the code <a href="https://github.com/Glaas/TowerOffense/blob/master/TowerOffense/Assets/Scripts/World/PlayGrid.cs">here</a> </p>
+public (int, int) North((int, int) x) { return ClampToGrid((x.Item1, x.Item2 + 1)); }
+public (int, int) East((int, int) x) { return ClampToGrid((x.Item1 + 1, x.Item2)); }
+public (int, int) South((int, int) x) { return ClampToGrid((x.Item1, x.Item2 - 1)); }
+public (int, int) West((int, int) x) { return ClampToGrid((x.Item1 - 1, x.Item2)); }
+public (int, int) NorthEast((int, int) x) { return ClampToGrid((x.Item1 + 1, x.Item2 + 1)); }
+public (int, int) SouthEast((int, int) x) { return ClampToGrid((x.Item1 + 1, x.Item2 - 1)); }
+public (int, int) SouthWest((int, int) x) { return ClampToGrid((x.Item1 - 1, x.Item2 - 1)); }
+public (int, int) NorthWest((int, int) x) { return ClampToGrid((x.Item1 - 1, x.Item2 + 1)); }
+
+{% endhighlight %}
+
+<p>You can see the code <a
+    href="https://github.com/Glaas/TowerOffense/blob/master/TowerOffense/Assets/Scripts/World/PlayGrid.cs">here</a> </p>
 <h3>Feedback form</h3>
 <img src="..\images\feedbackForm.png" alt="Tower Offense Screenshot" style="width:100%">
