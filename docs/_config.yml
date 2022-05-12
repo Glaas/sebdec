@@ -11,3 +11,8 @@ theme: minima
 plugins:
   - jekyll-feed
 
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
