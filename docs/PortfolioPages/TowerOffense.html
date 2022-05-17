@@ -15,7 +15,8 @@ title: Sebastien Decuyper - Tower Offense
 </div>
 <p>
   Tower Offense is a tower defense game with procedurally generated grid,
-  pathfinding system, and online features. Made in Unity with C#.
+  pathfinding system, and online features. Made in Unity with C#. This page is dedicated to explain some of the systems
+  I put together making it. To play it or learn about the gameplay, check the Itch.io link above!
 </p>
 <p>
 <h4>Main features:</h4>
@@ -39,10 +40,16 @@ title: Sebastien Decuyper - Tower Offense
 <div class="center-text">
   <p><i>Press the play button</i></p>
 </div>
-<p>The grid is generated at runtime and be dynamically resized.</p>
-<p>The helper class uses the simplest building blocks possible so any pattern is easily configurable.</p>
 
-<pre><code>
+<div class="row" style="padding-left: 5%; width: fit-content;">
+  <div class="column" style="width: 35%">
+
+    <p>The grid is generated at runtime and be dynamically resized.</p>
+    <p>The helper class uses the simplest building blocks possible so any pattern is easily configurable.</p>
+  </div>
+  <div class="column" style="width: 65%">
+
+    <pre><code>
 {% highlight c# %}
 public (int, int) North((int, int) x) { return ClampToGrid((x.Item1, x.Item2 + 1)); }
 public (int, int) East((int, int) x) { return ClampToGrid((x.Item1 + 1, x.Item2)); }
@@ -54,7 +61,25 @@ public (int, int) SouthWest((int, int) x) { return ClampToGrid((x.Item1 - 1, x.I
 public (int, int) NorthWest((int, int) x) { return ClampToGrid((x.Item1 - 1, x.Item2 + 1)); }
 {% endhighlight %}
 </code></pre>
-<p>You can see the code <a
-    href="https://github.com/Glaas/TowerOffense/blob/master/TowerOffense/Assets/Scripts/World/PlayGrid.cs">here</a> </p>
-<h3>Feedback form</h3>
-<img src="..\images\feedbackForm.png" alt="Tower Offense Screenshot" style="width:100%">
+  </div>
+  <p>You can see the code <a
+      href="https://github.com/Glaas/TowerOffense/blob/master/TowerOffense/Assets/Scripts/World/PlayGrid.cs">here</a>
+  </p>
+  <h3>Feedback form</h3>
+  <img src="..\images\feedbackForm.png" alt="Tower Offense Screenshot" style="width:100%">
+
+  <div class="row" style="padding-left: 5%; width: fit-content;">
+    <div class="column" style="width: 50%">
+
+      <p>The feedback form is a tool allowing the player to send feedback.</p>
+      <p>In addition to data sent by the player, additional data is packaged and sent:</p>
+      <ul>
+        <li>- Data displayed to the player, like current amount of money, health etc.</li>
+        <li>- Amount of enemies destroyed, time remaining before the end of each wave</li>
+      </ul>
+      <p>All the data is formatted into JSON and stored in a database.</p>
+    </div>
+    <div class="column" style="width: 50%">
+      <img src="../images/feedbackFormSent.png" alt="Tower Offense Screenshot" style="width:100%">
+    </div>
+  </div>
