@@ -4,3 +4,39 @@ bannertitle: Level Loader
 bannersubtitle: Scene loading custom tool
 title: Sebastien Decuyper - Level Loader
 ---
+<p>When working with scenes loaded additively in Unity, it can be tricky to juggle with all the scenes you might need
+    for gameplay, especially when you need to quickly change from scene to scene for fast iteration.</p>
+<p>This tool allows you to load a scene additively when it's needed, and then unload it when you're done with it. It
+    also allows you to
+    load a scene asynchronously, which is useful when you need to load a scene that takes a while to load.</p>
+<div class="row" style="width: fit-content;">
+    <div class="column" style="width: 50%">
+        <h3>Usage</h3>
+        <p>To get started, you only need to add the <code>SceneLoader</code> component on an empty GameObject.</p>
+        <p>In the project I developed the tool for, I often needed to reference specific scenes tied to UI and sounds,
+            which are here referenced.</p>
+        <p>It will also display the current level the player is in.</p>
+        <p>The system is also used for player progression regarding scene loading at runtime. Specific objects in the
+            scene would look at this List of levels to decide which scene to load.</p>
+    </div>
+    <div class="column" style="width: 50%">
+        <img src="../images/SceneLoaderscreenshot.jpg" alt="Scene Loader Screenshot" style="width: 100%">
+    </div>
+</div>
+<hr class="separator">
+<div class="row" style="width: fit-content;">
+    <div class="column" style="width: 50%">
+        <img src="../images/SceneLoaderContextMenuScreenshot.jpg" alt="Scene Loader Screenshot" style="width: 100%">
+    </div>
+    <div class="column" style="width: 50%">
+        <p>As the three aforementioned scenes often need to be loaded in succession, I made easily accessible from the
+            context menu. </p>
+        <p><code>Load setup scenes only</code> will only load the necessary scenes and classes for the full game to
+            function. The list in <code>Game Scenes</code> on the other hand will load the corresponding level as well
+            at the setup scenes.</p>
+            <p>This workflow made for jumping from scene to scene a breeze, which was a huge improvement over the
+                default way reaching the same result.</p>
+    </div>
+</div>
+<hr class="separator">
+<p>The entirety of this system is <a href="https://github.com/Glaas/1B_">publicly available on Github.</a></p>
