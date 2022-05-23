@@ -59,9 +59,25 @@ title: Sebastien Decuyper - Easings
 
     <div class="column" style="width:50%">
         <img src="../images/EasingsGif_.gif" alt="Linear" style="width:100%">
+        <br />
     </div>
 </div>
+<p>A very simple example of practical use:</p>
+<pre>
+<code>
+{% highlight csharp %}
+using UnityEngine;
 
+public class Example : MonoBehaviour
+{
+void Update()
+    {
+        var x = Mathf.Lerp(0, 10, Easings.InOutQuad(t));
+    }
+}
+{% endhighlight %}
+</code>
+</pre>
 <p>All of the curves were thoroughly tested on <a href="https://www.desmos.com/calculator/43lff1avme">Desmos
         Graph.</a></p>
 <iframe src="https://www.desmos.com/calculator/vfi5kvr6gr?embed" width="450" height="300" style="border: 1px solid #ccc"
@@ -70,6 +86,7 @@ title: Sebastien Decuyper - Easings
 
 <hr class="separator">
 <p>The entirety of this system is <a href="https://github.com/Glaas/Easings">publicly available on Github.</a></p>
-<p>Lastly, the system is bundled as a <a href="https://docs.unity3d.com/Manual/CustomPackages.html">Unity custom package</a>, making it easy to update.</p>
+<p>Lastly, the system is bundled as a <a href="https://docs.unity3d.com/Manual/CustomPackages.html">Unity custom
+        package</a>, making it easy to update.</p>
 
 {% include endcard.html %}
