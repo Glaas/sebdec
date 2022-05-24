@@ -3953,21 +3953,42 @@ body:before {
   color: #ffffff;
   font-size: calc(10px + 0.5vw);
   max-height: 100%;
-  font-weight: 600;
+  font-weight: 350;
   line-height: inherit;
   padding: 25 .25rem;
   text-decoration: none;
 }
 
+#header>.logo:hover {
+
+  animation-duration: .5s;
+  animation-name: ExpandTextOnHover;
+  animation-fill-mode: forwards;
+
+}
+
+
+@keyframes ExpandTextOnHover {
+  from {
+    font-size: 100%;
+    color: white;
+  }
+
+  to {
+    font-size: 150%;
+    color: #ff0909;
+  }
+}
+
 #header>nav>a {
   color: inherit;
-  display: inline-block;
-  padding: 0 0.75rem;
   text-decoration: none;
+  padding: 25 .25rem;
+
 }
 
 #header>nav>a:hover {
-  color: #ffffff;
+  color: #ff0909;
 }
 
 #header>nav>a[href="#menu"] {
