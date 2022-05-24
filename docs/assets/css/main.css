@@ -3967,7 +3967,6 @@ body:before {
 
 }
 
-
 @keyframes ExpandTextOnHover {
   from {
     font-size: 100%;
@@ -4594,4 +4593,29 @@ body.is-menu-visible #menu {
 
 .center-text {
   text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card:hover {
+  animation-duration: .28s;
+  animation-name: expand;
+  animation-fill-mode: forwards;
+
+}
+
+
+@keyframes expand {
+  from {
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  to {
+    box-shadow: 0px 0px 25px 15px rgba(143, 0, 0, 0.507);
+  }
 }
