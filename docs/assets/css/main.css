@@ -4599,7 +4599,6 @@ body.is-menu-visible #menu {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: auto;
   text-align: center;
-  font-family: arial;
 }
 
 .card:hover {
@@ -4616,6 +4615,6 @@ body.is-menu-visible #menu {
   }
 
   to {
-    box-shadow: 0px 0px 25px 15px rgba(143, 0, 0, 0.507);
+    box-shadow: 0px 0px 25px 15px #bb2d3b8e;
   }
 }
