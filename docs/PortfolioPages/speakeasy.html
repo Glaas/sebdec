@@ -1,31 +1,50 @@
 ---
 layout: singleBigElement
-bannertitle: Speak-Easy
-bannersubtitle: A simplistic dialogue system for Unity
-title: Sebastien Decuyper - Speak Easy
+bannertitle: Speak Easy
+bannersubtitle: A minimalistic Dialogue System for Unity
+title: Sebastien Decuyper - Speak-Easy
 ---
-<p>
-    Sepak-Easy is a dialogue system for Unity built with ease of use as a primary goal.
-    When I got started in Unity, I was frustrated that although you can find third-party dialogue systems, they were
-    packed
-    with features making them appealing for commercial use, but making them way harder to get into.
-    This system is simple to set-up, and great for more small-scale projects.</p>
+<div class="row">
+    <div class="column" style="width:50%">
+        <p>This is a minimalistic dialogue system for Unity. It's a simple way to create a dialogue system that can be
+            used in a game. It's not a full-featured dialogue system, but it's a good starting point for a game.</p>
+        <p> Speak-Easy is a dialogue system for Unity built with ease of use as a primary goal.
+            When I got started in Unity, I was frustrated that although you can find third-party dialogue systems, they
+            were packed
+            with features making them appealing for commercial use, but making them way harder to get into.
+            This system is simple to set-up, and great for more small-scale projects.</p>
 
-<h3>Features</h3>
+    </div>
+    <div class="column" style="width:50%">
+        <img src="../images/speakEasyGif.gif" alt="Speak Easy" style="width:100%">
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="column" style="width:50%">
+        <img src="../images/speakEasyScreenshot.jpg" alt="Speak Easy" style="width:100%">
+    </div>
+    <div class="column" style="width:50%">
+        <p>The <code>Dialogue Container</code> component is the angular stone of the system, and contains all the logic
+            and data necessary to each entity.</p>
+        <p>The dialogue can be either directly serialized in the inspector, for easy and fast prototyping, or stored as
+            Scriptable Objects.</p>
+    </div>
+</div>
+<br />
+<br />
+<br />
+<hr class="separator" />
 <ul>
-    <li>
-        <strong>Simple to set-up</strong>
-        <br>
-        Just drag-and-drop the dialogue system into your scene.
-
-        <br>
-        <br>
-    </li>
-</ul>
-<strong>Important links</strong>
-<ul>
-    <li>You can access the <a href="https://radweb.notion.site/Speak-Easy-cccef60ba0b04c7684d3650fe5a266d0">documention
+    <li>You can access the <a
+            href="https://radweb.notion.site/Speak-Easy-cccef60ba0b04c7684d3650fe5a266d0">documentation
             here</a>.</li>
-    <li>All the code source is available on <a href="https://github.com/Glaas/Speak-Easy">GitHub</a>. Feel free to
+    <li>All the code source is available on <a href="https://github.com/Glaas/Speak-Easy">GitHub</a>. Feel free
+        to
         contribute!</li>
+        <li>Lastly, the system is bundled as a <a href="https://docs.unity3d.com/Manual/CustomPackages.html">Unity custom package</a>, making it easy to update.</li>
 </ul>
+<div class="center">
+<img src="../images/speakEasyConversation.gif" alt="Speak Easy" style="width:75%">
+</div>
+{% include endcard.html %}

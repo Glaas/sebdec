@@ -1,0 +1,92 @@
+---
+layout: singleBigElement
+bannertitle: Easings
+bannersubtitle: A curves library for Unity
+title: Sebastien Decuyper - Easings
+---
+<p>We all use <code>Lerp</code>, but there are very few things we actually want to interpolate linearly in games. Of
+    course, we use <a href="www.easings.net">easings curves.</a></p>
+<p>Although <a href="https://docs.unity3d.com/ScriptReference/AnimationCurve.html">Unity's Animation Curves</a> could be
+    used, sometimes you just want a fast implementation that would save you from creating another field.</p>
+<p>This is where <code>Easings</code> comes in. It's a library of curves that can be used to interpolate between two
+    values in a clean and fast way.</p>
+<div class="row">
+    <div class="column" style="width:50%">
+        <p>The library contains most of the popular easing curves in use, most being listed on <a
+                href="www.easings.net">Easings.net:</a></p>
+        <div class="row">
+            <div class="column" style="width:50% ;">
+                <ul>
+                    <li><code>Linear</code></li>
+                    <li><code>InQuad</code></li>
+                    <li><code>OutQuad</code></li>
+                    <li><code>InOutQuad</code></li>
+                    <li><code>InCubic</code></li>
+                    <li><code>OutCubic</code></li>
+                    <li><code>InOutCubic</code></li>
+                    <li><code>InQuart</code></li>
+                    <li><code>OutQuart</code></li>
+                    <li><code>InOutQuart</code></li>
+                    <li><code>InQuint</code></li>
+                    <li><code>OutQuint</code></li>
+                    <li><code>InOutQuint</code></li>
+                    <li><code>InSine</code></li>
+                    <li><code>OutSine</code></li>
+                    <li><code>InOutSine</code></li>
+                </ul>
+            </div>
+            <div class="column" style="width:50% ;">
+                <ul>
+                    <li><code>InExpo</code></li>
+                    <li><code>OutExpo</code></li>
+                    <li><code>InOutExpo</code></li>
+                    <li><code>InCirc</code></li>
+                    <li><code>OutCirc</code></li>
+                    <li><code>InOutCirc</code></li>
+                    <li><code>InElastic</code></li>
+                    <li><code>OutElastic</code></li>
+                    <li><code>InOutElastic</code></li>
+                    <li><code>InBack</code></li>
+                    <li><code>OutBack</code></li>
+                    <li><code>InOutBack</code></li>
+                    <li><code>InBounce</code></li>
+                    <li><code>OutBounce</code></li>
+                    <li><code>InOutBounce</code></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="column" style="width:50%">
+        <img src="../images/EasingsGif_.gif" alt="Linear" style="width:100%">
+        <br />
+    </div>
+</div>
+<p>A very simple example of practical use:</p>
+<pre>
+<code>
+{% highlight csharp %}
+using UnityEngine;
+
+public class Example : MonoBehaviour
+{
+void Update()
+    {
+        var x = Mathf.Lerp(0, 10, Easings.InOutQuad(t));
+    }
+}
+{% endhighlight %}
+</code>
+</pre>
+<p>All of the curves were thoroughly tested on <a href="https://www.desmos.com/calculator/43lff1avme">Desmos
+        Graph.</a></p>
+<iframe src="https://www.desmos.com/calculator/vfi5kvr6gr?embed" width="450" height="300" style="border: 1px solid #ccc"
+    frameborder=0></iframe>
+
+
+<hr class="separator">
+<p>The entirety of this system is <a href="https://github.com/Glaas/Easings">publicly available on Github.</a></p>
+<p>Lastly, the system is bundled as a <a href="https://docs.unity3d.com/Manual/CustomPackages.html">Unity custom
+        package</a>, making it easy to update.</p>
+
+{% include endcard.html %}
