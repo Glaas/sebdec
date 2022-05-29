@@ -4622,6 +4622,8 @@ body.is-menu-visible #menu {
 .contactIcon>a {
   text-decoration: none;
   color: #111111;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
 }
 
@@ -4639,6 +4641,7 @@ body.is-menu-visible #menu {
 
   to {
     color: #b71824;
-    font-size: 200%;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
