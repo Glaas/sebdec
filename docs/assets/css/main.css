@@ -4619,16 +4619,14 @@ body.is-menu-visible #menu {
   }
 }
 
-
-
 .contactIcon>a {
-  font-size: 80px;
   text-decoration: none;
   color: #111111;
+
 }
 
 .contactIcon>a:hover {
-  animation-duration: .28s;
+  animation-duration: .3s;
   animation-name: expand;
   animation-fill-mode: forwards;
 
@@ -4637,11 +4635,10 @@ body.is-menu-visible #menu {
 @keyframes expand {
   from {
     color: #111111;
-    font-size: 80px;
   }
 
   to {
-    font-size: 105px;
     color: #b71824;
+    font-size: 200%;
   }
 }
