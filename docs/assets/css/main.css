@@ -518,7 +518,7 @@ button,
 .button {
   background-color: transparent;
   box-shadow: inset 0 0 0 1px #555555;
-  color: #555555 !important;
+  color: #555555;
 }
 
 input[type="submit"]:hover,
@@ -527,7 +527,7 @@ input[type="button"]:hover,
 button:hover,
 .button:hover {
   box-shadow: inset 0 0 0 1px #ce1b28;
-  color: #ce1b28 !important;
+  color: #ce1b28;
 }
 
 input[type="submit"]:hover:active,
@@ -3969,8 +3969,6 @@ body:before {
 
 @keyframes ExpandTextOnHover {
   from {
-    font-size: 100%;
-    color: white;
   }
 
   to {
