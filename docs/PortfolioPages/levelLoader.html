@@ -9,9 +9,9 @@ title: Sebastien Decuyper - Level Loader
 <p>This tool allows you to load a scene additively when it's needed, and then unload it when you're done with it. It
     also allows you to
     load a scene asynchronously, which is useful when you need to load a scene that takes a while to load.</p>
-<div class="row" style="width: fit-content;">
-    <div class="column" style="width: 50%">
-        <h3>Usage</h3>
+<div class="row">
+    <div class="col-sm">
+        <strong>Usage</strong>
         <p>To get started, you only need to add the <code>SceneLoader</code> component on an empty GameObject.</p>
         <p>In the project I developed the tool for, I often needed to reference specific scenes tied to UI and sounds,
             which are here referenced.</p>
@@ -19,16 +19,17 @@ title: Sebastien Decuyper - Level Loader
         <p>The system is also used for player progression regarding scene loading at runtime. Specific objects in the
             scene would look at this List of levels to decide which scene to load.</p>
     </div>
-    <div class="column" style="width: 50%">
-        <img src="../images/SceneLoaderscreenshot.jpg" alt="Scene Loader Screenshot" style="width: 100%">
+    <div class="col-lg">
+        <img src="../images/SceneLoaderscreenshot.jpg" alt="Scene Loader Screenshot" style="max-width: 100%">
     </div>
 </div>
-<hr class="separator">
-<div class="row" style="width: fit-content;">
-    <div class="column" style="width: 50%">
-        <img src="../images/SceneLoaderContextMenuScreenshot.jpg" alt="Scene Loader Screenshot" style="width: 100%">
+
+<hr>
+<div class="row">
+    <div class="col-lg">
+        <img src="../images/SceneLoaderContextMenuScreenshot.jpg" alt="Scene Loader Screenshot" style="max-width: 100%">
     </div>
-    <div class="column" style="width: 50%">
+    <div class="col-sm">
         <p>As the three aforementioned scenes often need to be loaded in succession, I made easily accessible from the
             context menu. </p>
         <p><code>Load setup scenes only</code> will only load the necessary scenes and classes for the full game to
@@ -39,5 +40,4 @@ title: Sebastien Decuyper - Level Loader
         <p>The entirety of this system is <a href="https://github.com/Glaas/1B_">publicly available on Github.</a></p>
     </div>
 </div>
-
 {% include endcard.html %}
