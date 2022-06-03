@@ -4620,9 +4620,7 @@ body.is-menu-visible #menu {
 .contactIcon>a {
   text-decoration: none;
   color: #111111;
-  font-size: 5vw;
- 
-
+  font-size: 4vw;
 }
 
 .contactIcon>a:hover {
