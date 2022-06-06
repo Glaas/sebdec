@@ -60,37 +60,5 @@ title: Sebastien Decuyper - Contact
 <p>You can also find all of my contact info <a href="PortfolioPages/CV.html"> on my CV.</a></p>
 {% include downloadPDF.html %}
 <br />
-<p>Additionally, you can send me a word here!</p>
-<div>Your name <i>(optional)</i></div>
-<input type="text" name="name" placeholder="name" style="width: 20%;" />
 
-<div>Your comment</div>
-<textarea type="text" name="name" placeholder="comment" required style="width:80%;">
-</textarea>
-
-<div>Put your email there if you want me to get back to you !<i>(optional)</i></div>
-<input type="email" name="email" placeholder="myemail@example.com" style="width: 20%;" />
-
-<br />
-
-<!-- This button will have a loading spinner. Keep the inner span for best results. -->
-<button type="submit" class="pageclip-form__submit" style="border-radius: 4px;">
-	<span>Send</span>
-</button>
-
-
-</form>
-<style>
-	inpsdvut[type=text] {
-		width: 100%;
-		height: 150px;
-		padding: 12px 20px;
-		box-sizing: border-box;
-		border: 2px solid #ccc;
-		border-radius: 4px;
-		background-color: #ff3e3e;
-		font-size: 16px;
-		resize: none;
-	}
-</style>
-
+{% include commentForm.html %}
