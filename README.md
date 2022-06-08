@@ -1,2 +1,6 @@
 # sebdec
-Personal website repository
+
+This the reposity for my personal website at [sebdec.net](https://sebdec.net).
+
+It is using GitHub Pages and is using [Jekyll](https://jekyllrb.com).
+
